@@ -22,13 +22,13 @@ func main() {
 	}
 	fmt.Println(my_account.Balance())
 
+	//test change owner
 	fmt.Println(my_account.Owner())
 	my_account.ChangeOwner("Doug")
 	fmt.Println(my_account.Owner())
 
+	//test account info to string format function
 	content := my_account.String()
 	fmt.Println(content)
-
-	//test the string fromat function
 	fmt.Println(my_account)
 }
