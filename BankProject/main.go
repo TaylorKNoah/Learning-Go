@@ -21,4 +21,14 @@ func main() {
 		fmt.Println(errWithdraw)
 	}
 	fmt.Println(my_account.Balance())
+
+	fmt.Println(my_account.Owner())
+	my_account.ChangeOwner("Doug")
+	fmt.Println(my_account.Owner())
+
+	content := my_account.String()
+	fmt.Println(content)
+
+	//test the string fromat function
+	fmt.Println(my_account)
 }
