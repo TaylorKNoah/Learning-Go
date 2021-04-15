@@ -1,10 +1,10 @@
 # Learning-Go
 In this repo I am working through Nomad Coders tutorial on the GO language.  
-I have seperated the individual mini-projects into seperate folders  
+It is currently free at the [Nomad Coder's Website] (https://nomadcoders.co/go-for-beginners/lectures/1712 if you create an account (also free). 
 
-What I learned to do in Go in each project:
+What I concepts I learned in Go from each project:
 
-Bank
+Bank:
  - structs
  - function vs method
  - method reciever
