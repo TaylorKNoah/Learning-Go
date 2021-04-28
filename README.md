@@ -7,13 +7,15 @@ It is currently free at the [Nomad Coder's Website](https://nomadcoders.co/go-fo
 What I concepts I learned in Go from each project:
 
 Bank:
- - structs
- - function vs method
- - method reciever
+ - Structs
+ - Function vs method
+ - Method reciever
  - Private data in a struct
- - returning multiple data and data types from a function/method
+ - Returning multiple data and data types from a function/method
 
 
 Dictionary:
  - Types
- - The map type
+ - Maps
+ - Error handling
+ - User input
