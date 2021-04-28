@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	fmt.Println("Hello and welcome to the dictionary 9000.")
+	fmt.Println("\n\nHello and welcome to the dictionary 9000.")
 	fmt.Println("Here you will be able to create and modify a dictionary. Wow.")
 
 	input := 1
