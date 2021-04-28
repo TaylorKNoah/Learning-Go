@@ -18,4 +18,5 @@ Dictionary:
  - Types
  - Maps
  - Error handling
+ - Catching only the function returns I care about
  - User input
