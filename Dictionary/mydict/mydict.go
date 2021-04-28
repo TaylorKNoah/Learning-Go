@@ -1,6 +1,9 @@
 package mydict
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
 //dictionary type
 type Dictionary map[string]string
@@ -11,6 +14,18 @@ var (
 	errCannotUpdate = errors.New("err: cannot update non-existing word")
 	errCannotDelete = errors.New("error: cannot delete word. does not exist")
 )
+
+func (d Dictionary) Display() {
+	if len(d) == 0 {
+		fmt.Println("Dictionary is empty!")
+	} else {
+		k := 0
+		for i, j := range d {
+			fmt.Println(k, i, ": ", j)
+			k++
+		}
+	}
+}
 
 func (d Dictionary) Search(word string) (string, error) {
 	value, exists := d[word]
