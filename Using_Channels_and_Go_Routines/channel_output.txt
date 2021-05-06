@@ -1,0 +1,105 @@
+----- NEW TEST SEGMENT -----
+
+V: 3 jkdksl
+V: 1 Invalid
+V: 0 Valid
+V: 4 lkj
+V: 2 Valid
+false0
+false1
+true2
+false3
+true4
+
+-----END TEST SEGMENT -----
+
+----- NEW TEST SEGMENT -----
+
+V: 1 Invalid
+V: 3 jkdksl
+V: 0 Valid
+V: 2 Valid
+V: 4 lkj
+false0
+false1
+true2
+true3
+false4
+
+-----END TEST SEGMENT -----
+
+----- NEW TEST SEGMENT -----
+
+V: 4 lkj
+V: 1 Invalid
+V: 0 Valid
+V: 3 jkdksl
+V: 2 Valid
+false0
+false1
+true2
+false3
+true4
+
+-----END TEST SEGMENT -----
+
+----- NEW TEST SEGMENT -----
+
+V: 4 lkj
+V: 1 Invalid
+V: 0 Valid
+V: 3 jkdksl
+V: 2 Valid
+false0
+false1
+true2
+false3
+true4
+
+-----END TEST SEGMENT -----
+
+----- NEW TEST SEGMENT -----
+
+V: 3 jkdksl
+false0
+V: 2 Valid
+V: 1 Invalid
+true1
+V: 4 lkj
+false2
+V: 0 Valid
+false3
+false4
+
+-----END TEST SEGMENT -----
+
+----- NEW TEST SEGMENT -----
+
+V: 2 Valid
+V: 1 Invalid
+true0
+V: 4 lkj
+false1
+false2
+false3
+V: 0 Valid
+V: 3 jkdksl
+true4
+
+-----END TEST SEGMENT -----
+
+----- NEW TEST SEGMENT -----
+
+V: 0 Valid
+V: 4 lkj
+V: 2 Valid
+V: 3 jkdksl
+true0
+V: 1 Invalid
+false1
+false2
+true3
+false4
+
+-----END TEST SEGMENT -----
+

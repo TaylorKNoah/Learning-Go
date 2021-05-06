@@ -1,32 +1,59 @@
 package main
 
-import "fmt"
+// Issues
+//     Goal: output 2 true and 3 false values from line 27
+//     Output: sometimes gives 1 true and 4 false
+//     Seens like some threads
+
+import (
+	"fmt"
+	"log"
+	"os"
+)
 
 func main() {
 
-	names := [2]string{"Valid", "Invalid"}
+	names := [5]string{"Valid", "Invalid", "Valid", "jkdksl", "lkj"}
 
 	c := make(chan bool)
-	for _, name := range names {
+	for j, name := range names {
 
-		go verify(name, c)
+		go verify(name, c, j)
 
 	}
 
-	results := [len(names)]bool{true, true}
+	results := [len(names)]bool{true, true, true, true, true}
+
+	f, err := os.OpenFile("Learning-Go/Using_Channels_and_Go_Routines/channel_output.txt", os.O_APPEND|os.O_CREATE|os.O_RDONLY, 0644)
+	f.WriteString("----- NEW TEST SEGMENT -----\n\n")
+	if err != nil {
+		log.Println(err)
+	}
 
 	for i := range results {
-		results[i] = <-c
+		result := <-c
+		writestring := fmt.Sprintf("%t%d%s", result, i, "\n")
+		f.WriteString(writestring)
+		fmt.Println(i, result)
 	}
-
-	fmt.Println(results)
-
+	f.WriteString("\n-----END TEST SEGMENT -----\n\n")
+	f.Close()
 }
 
-func verify(name string, c chan bool) {
+func verify(name string, c chan bool, i int) {
+
+	f, err := os.OpenFile("Learning-Go/Using_Channels_and_Go_Routines/channel_output.txt", os.O_APPEND|os.O_CREATE|os.O_RDONLY, 0644)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	output := fmt.Sprintf("%s%d%s%s%s", "V: ", i, " ", name, "\n")
+	f.WriteString(output)
+
+	//f.Close()
+
 	if name == "Valid" {
 		c <- true
 	}
-
 	c <- false
 }
