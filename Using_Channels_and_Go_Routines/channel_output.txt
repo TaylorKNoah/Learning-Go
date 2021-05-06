@@ -1,3 +1,25 @@
+This file collects output from the main program (channels and go routines)
+
+             Key
+-------------------------------
+V: int string    - (thread id, name)This shows the information of a call to the "verify" function. 
+bool int         - (channel result, output order) This outputs the channel results in the order they are recieved.
+
+         Notes
+-------------------------------
+The test is setup to see if the output will always contain 2 channel outputs of "true" and 3 channel outputs of "false".
+2 of the 5 input strings are exactly "Valid" where the other three strings are not.
+The program verifies a string is eqivelent to "Valid" and sends the appropriate bool through a channel.
+
+It seems as though some threads repeat their process if a later thread is waiting. The test on line 74 shows
+four outputs of "false" instead of three.
+
+Thread id to channel output order is indeterministic.
+
+
+
+
+
 ----- NEW TEST SEGMENT -----
 
 V: 3 jkdksl
