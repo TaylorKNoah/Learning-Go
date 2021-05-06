@@ -20,3 +20,8 @@ Dictionary:
  - Error handling
  - Catching only the function returns I care about
  - User input
+
+URL Checker Slow
+ - lkj
+ - lkj
+ - lkj
