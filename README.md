@@ -22,6 +22,3 @@ Dictionary:
  - User input
 
 URL Checker Slow
- - lkj
- - lkj
- - lkj
