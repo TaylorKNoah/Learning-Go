@@ -1,14 +1,8 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"net/http"
-)
-
-var (
-	results          = make(map[string]string)
-	errRequestFailed = errors.New("request failed")
 )
 
 type requestResult struct {
@@ -51,7 +45,7 @@ func hitURL(url string, c chan<- requestResult) {
 	resp, err := http.Get(url)
 	status := "SUCCESS"
 	if err != nil || resp.StatusCode >= 400 {
-		status = "FAILED"
+		status = "FAILED "
 	}
 
 	c <- requestResult{url: url, status: status}
