@@ -20,3 +20,11 @@ Dictionary:
  - Error handling
  - Catching only the function returns I care about
  - User input
+
+URL Checker Slow (no concurrency)
+ - URL Validation
+ - URL Hit response status codes
+
+Channels / Go Routines
+ - Basic go routines (concurrency)
+ - Basic channels
